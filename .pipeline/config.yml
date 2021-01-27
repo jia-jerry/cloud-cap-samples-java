@@ -1,0 +1,14 @@
+# Project configuration
+general:
+  productiveBranch: master
+# Stage configuration
+stages:
+  productionDeployment:
+    cfTargets:
+		- org: '<YOUR ORG NAME>'
+      space: '<YOUR SPACE NAME>'
+      appName: '<NAME OF YOUR APPLICATION>'
+      apiEndpoint: '<YOUR CLOUD FOUNDRY API ENDPOINT>'
+      credentialsId: '<NAME OF YOUR CEDENTIAL>'
+# Step configuration
+steps:
